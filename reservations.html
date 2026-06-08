@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pink Swan – Reservations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="reservations.html" class="active">Reservations</a>
+        <a href="customer.html">Customer Form</a>
+    </nav>
+
+    <header class="page-header">
+        <h1>Reserve a Table</h1>
+        <p>We look forward to serving you.</p>
+    </header>
+
+    <section class="form-container">
+        <form>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="example@email.com" required>
+
+            <label for="party">Party Size</label>
+            <input type="number" id="party" min="1" max="20" placeholder="2" required>
+
+            <label for="date">Reservation Date</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Reservation Time</label>
+            <input type="time" id="time" required>
+
+            <label for="requests">Special Requests</label>
+            <textarea id="requests" placeholder="Allergies, celebrations, seating preferences..." rows="4"></textarea>
+
+            <button type="submit" class="submit-btn">Submit Reservation</button>
+
+        </form>
+    </section>
+
+    <footer>
+        <p style="font-size: 12px;">Website by William</p>
+    </footer>
+
+</body>
+</html>
